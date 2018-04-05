@@ -18,24 +18,34 @@
     declaro una variable por cada parametro que recibe la funcion*/
 
 
-    void mostrarMensaje(int numero);
+    int mostrarEincrementar(int);
 
 int main()
 {
     int numero;
+    int incremento;
     printf("Ingrese un numero \n");
     scanf("%d",&numero); //parametro actual
 
     //llamada a la funcion
-    mostrarMensaje(numero);
+    incremento = mostrarEincrementar(numero);
+
+    printf("\nEl numero incrementado es: %d",incremento);
+
     return 0;
 }
 
 //Desarrollo o Implementacion de la funcion
 
-void mostrarMensaje(int numero) //parametro formal
+int mostrarEincrementar(int numero) //parametro formal
 {
+    int retorno;
     printf("El numero ingresado es: %d",numero);
+
+    retorno = numero + 10;
+
+    return retorno;
+
 }
 
 
