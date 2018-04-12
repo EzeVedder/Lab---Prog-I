@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1522285020 source:d:\reynicolas\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+
+1522285032 source:d:\reynicolas\calculadora\lib.c
+	"lib.h"
+
+1522285020 d:\reynicolas\calculadora\lib.h
+
