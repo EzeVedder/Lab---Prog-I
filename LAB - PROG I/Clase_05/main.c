@@ -101,7 +101,7 @@ int main()
         printf("%d -- %d\n",i,vec[i]);
     }
     }
-  */
+
 
     //funcion que recibe un max y un min y devuelve el max
     int buscarMaxVector(int [],int);
@@ -142,3 +142,19 @@ int main()
         return maximo;
     }
 
+*/
+
+
+    int main (){
+
+
+    if(indice == -1)
+    {
+        printf("No se encontro el numero");
+    }
+
+
+
+    return 0;
+
+    }
