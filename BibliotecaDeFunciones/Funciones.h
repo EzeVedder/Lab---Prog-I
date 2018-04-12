@@ -9,7 +9,15 @@
 
 float sumar(float n1,float n2);
  ------------------------------
-
+ /** \brief
+  *
+  * \param n1 float Es el primer parametro
+  * \param n2 float
+  * \return float
+  *
+  */
+ float restar(float n1,float n2);
+ ------------------------------
 /** \brief Pide dos numeros con decimal
  *
  * \param mensaje[] char msj que se le puede agregar como parametro
