@@ -1,30 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int factorial(int);
+float dividirFloat(float,float);
 int main()
 {
-    int factor;
-    int num;
-    printf("Ingrese un numero : ");
-    scanf("%d",&num);
-    factor=factorial(num);
-    printf("El numero factorial es : %d",factor);
+    int result;
+    int n1;
+    int n2;
 
+    printf("Ing un num:");
+    scanf("%f",&n1);
+    printf("Ing un num:");
+    scanf("%f",&n2);
 
+    result = dividirFloat(n1,n2);
 
+    printf("El resultado es: &f",result);
 
     return 0;
 }
-int factorial(int num)
-{
-    int factor=1;
-    int i;
-    for (i=num;i>=1;i--)
-    // for (i=1;i<=5;i++)
+    float dividirFloat(float a,float b)
     {
-        factor=factor*i;
+    float cociente;//defino la variable que retorna
+    if(b != 0)
+    {
+            cociente = (float)a/b;
     }
-    return factor;
-
-}
+    return cociente;
+    }
