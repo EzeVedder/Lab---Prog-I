@@ -1,43 +1,56 @@
-/** \brief Pide dos numeros con decimal y devuelve la suma de ellos
+
+/** \brief Funcion para mostrar el numero ingresado
+ *
+ * \param mensaje[] char msj de retorno
+ * \return float Devuelve el numero ingresado
+ *
+ */
+float mostrarNum(char mensaje[]);
+//------------------------------
+/** \brief Recibe dos numeros de tipo float y devuelve la suma de ellos
  *
  * \param n1 float Es el primer parametro
  * \param n2 float Es el segundo parametro
- * \param suma float Suma los numeros
  * \return float Devuelve la suma de los dos numeros recibidos como parametro
  *
  */
 
-float sumar(float n1,float n2);
- ------------------------------
- /** \brief
+float sumarFloat(float n1,float n2);
+ //------------------------------
+ /** \brief Funcion que sirve para restar dos numeros de tipo float
   *
   * \param n1 float Es el primer parametro
-  * \param n2 float
-  * \return float
+  * \param n2 float Es el segundo parametro
+  * \return float Devuelve la resta de los dos numeros recibidos como parametro
   *
   */
- float restar(float n1,float n2);
- ------------------------------
-/** \brief Pide dos numeros con decimal
+float restarFloat(float n1,float n2);
+ //------------------------------
+
+/** \brief Funcion que sirve para multiplicar dos numeros de tipo float
  *
- * \param mensaje[] char msj que se le puede agregar como parametro
- * \param min float primer numero parametro
- * \param max float segundo numero parametro
- * \return float devuelve los numeros y el msj seleccionado
+ * \param n1 float Es el primer parametro
+ * \param n2 float Es el segundo parametro
+ * \return float Devuelve el producto entre los dos numeros recibidos como parametro
  *
  */
+float multiplicarFloat(float n1,float n2);
+//-------------------------------
 
-float pedirFloat(char mensaje[], float min, float max);
- ------------------------------
-
-/** \brief
+/** \brief Esta funcion sirve para obtener el cociente entre dos numeros float
  *
- * \param dato float Es el numero a validar
- * \param min float Parametro para identificar si el numero se encuentra dentro del rango del minimo
- * \param max float Parametro para identificar si el numero se encuentra dentro del rango del maximo
- * \param mensaje[] char msj de error
- * \return float devuelve el numero
+ * \param n1 float Es el primer parametro
+ * \param n2 float Es el segundo parametro difente de 0
+ * \return float Devuelve el cociente entre los dos numeros recibidos como parametros
  *
  */
+float dividirFloat(float n1,float n2);
+//-------------------------------
 
-float validarFloat(float numero, float min, float max, char mensaje[]);
+/** \brief Funcion para obtener el factorial de un numero (sin recursividad)
+ *
+ * \param Numero que hay que calcular
+ * \return Retorna el factorial del numero a la llamada
+ *
+ */
+int calcularFactorial(int a);

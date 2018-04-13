@@ -1,28 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+int factorial(int);
 int main()
 {
-    float A;
-    float B;
-    float Resultado;
+    int factor;
+    int num;
+    printf("Ingrese un numero : ");
+    scanf("%d",&num);
+    factor=factorial(num);
+    printf("El numero factorial es : %d",factor);
 
-    A = pedirFloat("Ingrese un numero",1,100);
-    B = pedirFloat("Ingrese un numero",1,100);
 
-    Resultado = sumar(A,B);
 
-    printf("Esta es la suma %.2f",Resultado);
 
+    return 0;
+}
+int factorial(int num)
+{
+    int factor=1;
+    int i;
+    for (i=num;i>=1;i--)
+    // for (i=1;i<=5;i++)
+    {
+        factor=factor*i;
+    }
+    return factor;
 
 }
-
-
-
-
-
-
-
-
-
